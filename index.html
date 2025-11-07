@@ -32,7 +32,7 @@
 	</head>
 	<body>
 		<header
-			class="flex justify-between items-center w-full h-[64px]  p-[24px] absolute z-[100] inset bg-white md:relative"
+			class="flex justify-between items-center w-full h-[64px] p-[24px] absolute z-[100] inset bg-white md:relative"
 		>
 			<img src="/images/logo-dark.svg" />
 
@@ -80,7 +80,7 @@
 
 		<main>
 			<section
-				class="md:h-[300px]  md:flex-row lg:h-120 md:flex lg:flex lg:justify-between justify-center items-center overflow-hidden relative z-20"
+				class="md:h-[300px] md:flex-row lg:h-120 md:flex lg:flex lg:justify-between justify-center items-center overflow-hidden relative z-20"
 			>
 				<img src="/images/bg-intro-mobile.svg" class="md:hidden w-full" />
 
@@ -95,7 +95,9 @@
 					class="top-[-50px] md:right-[-60px] absolute md:w-[300px] lg:w-[500px] lg:h-[700px] lg:right-[-120px] lg:top-[-120px] z-[20]"
 				/>
 
-				<div class="h-full  lg:px-[60px] md:flex flex-col md:justify-center  md:items-start ">
+				<div
+					class="h-full lg:px-[60px] md:flex flex-col md:justify-center md:items-start"
+				>
 					<div
 						class="flex flex-col md:items-center md:w-[50%] md:item-bottom lg:items-start items-center justify-center text-center lg:m-[0px] gap-8 lg:gap-8 lg:w-[500px] lg:justify-start lg:inset-9"
 					>
@@ -141,7 +143,7 @@
 						</p>
 					</div>
 					<div
-						class="flex flex-col justify-center gap-4 content-2 md:flex-row md:justify-start"
+						class="grid grid-cols-1 md:grid-cols-2 lg:flex flex-col justify-center gap-4 content-2 lg:flex-row lg:items-center md:justify-start"
 					>
 						<div
 							class="flex flex-col justify-center items-center gap-4 content-2-2"
@@ -151,7 +153,7 @@
 							</div>
 							<div class="content-2-2-2 flex flex-col gap-4">
 								<h3
-									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 md:text-left"
+									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 lg:text-left"
 								>
 									<a>Online Banking</a>
 								</h3>
@@ -172,7 +174,7 @@
 							</div>
 							<div class="content-2-2-2 flex flex-col gap-4">
 								<h3
-									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 md:text-left"
+									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 lg:text-left"
 								>
 									<a>Simple Budgeting</a>
 								</h3>
@@ -194,7 +196,7 @@
 
 							<div class="flex-col gap-4">
 								<h3
-									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 md:text-left"
+									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 lg:text-left"
 								>
 									<a>Fast Onboarding</a>
 								</h3>
@@ -215,7 +217,7 @@
 							</div>
 							<div class="flex-col gap-4">
 								<h3
-									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 md:text-left"
+									class="text-center leading-[115%] tracking-[0.4px] text-blue-950 lg:text-left"
 								>
 									<a>Open API</a>
 								</h3>
@@ -231,16 +233,23 @@
 				</div>
 			</section>
 
-			<section class="container-for-article px-[24px] py-[64px] md:px-[40px]">
+			<section class="container-for-article px-[24px] py-[64px] md:px-[40px] ">
 				<div class="mx-[10px]">
 					<h2
 						class="text-center text-blue-950 leading-[120%] tracking-[-0.5px] text-[32px] md:text-left"
 					>
 						Latest Articles
 					</h2>
-					<div class="flex flex-col gap-6 md:flex-row">
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 lg:flex gap-6 lg:flex-row justify-center items-center"
+					>
 						<article>
-							<img src="/images/image-currency.jpg" />
+							<div class="h-[159px] transition delay-150 duration-300 ease-in-out hover:-translate-x-3 hover:scale-110">
+								<img
+									src="/images/image-currency.jpg"
+									class="w-full h-full md:object-contain rounded"
+								/>
+							</div>
 							<div class="article-details-container py-[24px]">
 								<div class="article-details">
 									<p
@@ -266,8 +275,13 @@
 							</div>
 						</article>
 
-						<article>
-							<img src="/images/image-restaurant.jpg" />
+						<article >
+							<div class="h-[159px] transition delay-150 duration-300 ease-in-out hover:-translate-x-3 hover:scale-110">
+								<img
+									src="/images/image-restaurant.jpg"
+									class="w-full h-full md:object-contain rounded"
+								/>
+							</div>
 							<div class="article-details-container py-[24px]">
 								<div class="article-details">
 									<p
@@ -294,7 +308,12 @@
 						</article>
 
 						<article>
-							<img src="/images/image-plane.jpg" />
+							<div class=" h-[159px] transition delay-150 duration-300 ease-in-out hover:-translate-x-3 hover:scale-110">
+								<img
+									src="/images/image-plane.jpg"
+									class="w-full h-full md:object-contain rounded"
+								/>
+							</div>
 							<div class="article-details-container py-[24px]">
 								<div class="article-details">
 									<p
@@ -320,7 +339,12 @@
 							</div>
 						</article>
 						<article>
-							<img src="/images/image-confetti.jpg" />
+							<div class="h-[159px] transition delay-150 duration-300 ease-in-out hover:-translate-x-3 hover:scale-110">
+								<img
+									src="/images/image-confetti.jpg"
+									class="w-full h-full md:object-contain rounded"
+								/>
+							</div>
 							<div class="article-details-container py-[24px]">
 								<div class="article-details">
 									<p
